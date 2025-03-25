@@ -37,3 +37,4 @@ y_pred = log_reg.predict(X_val)
 accuracy = accuracy_score(y_val, y_pred)
 print("Accuracy: ", accuracy)
 
+#The logistic regression model trained with the selected features achieved an accuracy of ~69.68% on the validation set.

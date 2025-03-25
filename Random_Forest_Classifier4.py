@@ -16,4 +16,12 @@ feature_importance.sort_values(by="Importance", ascending=False, inplace=True)
 
 print("Feature Importance: \n", feature_importance)
 
-#Write a code to find the three most important features according to the order of their values
+#Using a Random Forest classifier to rank feature importance using a tree-based model.
+#Top 3 Important Features:
+
+#1.Relationship_Strain (10.65%)
+#2.Risk_Taking_Behavior (10.58%)
+#3.Financial_Issues (10.55%)
+
+#Least Important: Physical_Mental_Health_Problems (8.53%)
+#Random Forest considers feature interactions, it provides better insights than correlation or chi-square tests.

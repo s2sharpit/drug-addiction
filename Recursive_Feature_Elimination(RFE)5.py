@@ -18,3 +18,5 @@ rfe.fit(X, y)
 selected_features = X.columns[rfe.support_].tolist()
 
 print("Selected Features:",selected_features)
+
+#This method eliminates less important features iteratively.

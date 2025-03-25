@@ -19,4 +19,6 @@ print(corr_with_target)
 print("Correlation_higest value: \n",max(corr_with_target))
 print("Correlation_minimum value: \n",min(corr_with_target))
 
-#Write a code to find the three most important features according to the order of their values
+#The highest positive correlation with Addiction_Class is Physical_Mental_Health_Problems (0.00798).
+#The lowest correlation is Withdrawal_Symptoms (-0.00639).
+#Overall, correlations are weak, indicating that individual features may not have strong predictive power alone.
