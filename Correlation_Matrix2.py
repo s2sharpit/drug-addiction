@@ -15,6 +15,10 @@ plt.show()
 
 #Sorting features based on correlation with the target variable
 corr_with_target = corr_matrix["Addiction_Class"].drop("Addiction_Class").sort_values(ascending=False)
+# corr_matrix["Addiction_Class"]- Pulls the correlation values of all features with Addiction_Class from the correlation matrix
+# .drop("Addiction_Class") - Removes the target’s correlation with itself (which is always 1)
+# .sort_values(ascending=False)- Sorts features by descending correlation with the target. So the most positively features come first.
+
 print(corr_with_target)
 print("Correlation_higest value: \n",max(corr_with_target))
 print("Correlation_minimum value: \n",min(corr_with_target))

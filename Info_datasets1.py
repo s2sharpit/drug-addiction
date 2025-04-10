@@ -8,4 +8,4 @@ train_df = pd.read_csv(train_path)
 test_df = pd.read_csv(test_path)
 
 #Displaying basic information about datasets
-train_df.info(), test_df.info(), train_df.head(), test_df.head()
+train_df.info(), test_df.info()

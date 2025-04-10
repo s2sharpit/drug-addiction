@@ -13,6 +13,9 @@ chi_scores, p_values = chi2(X, y)
 
 #Creating a Dataframe with results
 chi2_results = pd.DataFrame({"Feature":X.columns, "Chi2 Score":chi_scores, "P-value":p_values})
+# X.columns- List of all feature names you're testing
+# chi_scores- The Chi-Square statistic for each feature with respect to the target
+# p_values- The p-values for each Chi-Square test. Lower = more significant
 chi2_results.sort_values(by="Chi2 Score", ascending=False, inplace=True)
 print(chi2_results)
 print("Maximum_chi_square_value: ", max(chi_scores))
