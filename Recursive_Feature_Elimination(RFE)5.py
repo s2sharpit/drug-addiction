@@ -12,7 +12,6 @@ y = train_df["Addiction_Class"]
 #random_state- Ensures reproducibility of results (same output each time you run it).
 log_reg = LogisticRegression(max_iter=1000, random_state=42)
 
-
 #Applying RFE to select top five(5) features
 rfe = RFE(log_reg, n_features_to_select=5) #log_reg - The estimator used to evaluate each subset of features
 rfe.fit(X, y) #Training
